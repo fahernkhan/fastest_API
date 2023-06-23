@@ -14,7 +14,7 @@ class Database:
             database =params.get("MYSQL_DB")
         )
 
-    def search_movie_by_year(self, year):
+    def search_movie_by_directors_name(self, year):
         q = f'''
             SELECT
                 movie_title as title,
